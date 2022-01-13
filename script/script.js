@@ -25,7 +25,9 @@ function setTheme(themeName) {
 (function () {
   if (localStorage.getItem('theme') === 'theme-dark') {
     setTheme('theme-dark');
+    checkbox.checked = 'checked';
   } else {
     setTheme('theme-light');
+    checkbox.checked = '';
   }
 })();

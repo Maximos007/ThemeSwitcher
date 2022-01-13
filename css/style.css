@@ -7,10 +7,12 @@
 
 .theme-light {
   --color: #F1F1F1;
+  --font-color: #000000;
 }
 
 .theme-dark {
   --color: #292C35;
+  --font-color: #ffffff;
 }
 
 :root {
@@ -24,15 +26,8 @@ body {
   height: 100vh;
   
   background: var(--color);
+  color: var(--font-color);
   transition: background-color .2s linear;
-}
-
-body.dark {
-  background: var(--dark);
-}
-
-body.dark  {
-  color: var(--light);
 }
 
 .container {
